@@ -198,9 +198,9 @@ nav .btn:hover {
   }
 
   form{
-    
+    margin: 20px auto;
     height: 45px;
-  
+    width: 300px;
   }
 
   form input{
