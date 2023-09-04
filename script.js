@@ -39,11 +39,17 @@ async function searchImages() {
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   page = 1;
-  searchResult.innerHTML = ""; 
+  searchResult.innerHTML = "";
   searchImages();
 });
 
-showMoreBtn.addEventListener("click", () => {
+searchButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  searchImages();
+});
+
+showMoreBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   page++;
   searchImages();
 });
